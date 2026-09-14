@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================================================
+     REPLACE https://USERNAME.github.io/REPO/ with your real
+     GitHub Pages URL in the 4 places marked below.
+     ============================================================ -->
+
+<title>AI Text Tools: Free Tools for Rewriting, Summarizing &amp; Prompts</title>
+<meta name="description" content="A guide to the free AI text tools at texttoolsai.app: prompt generator, paragraph rewriter, article summarizer, tone changer, grammar fixer, cold email writer and more.">
+<link rel="canonical" href="https://USERNAME.github.io/REPO/"><!-- [1] -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://USERNAME.github.io/REPO/"><!-- [2] -->
+<meta property="og:title" content="AI Text Tools: Free Tools for Rewriting, Summarizing &amp; Prompts">
+<meta property="og:description" content="A guide to the free AI text tools at texttoolsai.app: prompt generator, paragraph rewriter, article summarizer, tone changer, grammar fixer and more.">
+<meta property="og:image" content="https://www.texttoolsai.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI Text Tools">
+<meta property="og:site_name" content="AI Text Tools Guide">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Text Tools: Free Tools for Rewriting, Summarizing &amp; Prompts">
+<meta name="twitter:description" content="A guide to the free AI text tools at texttoolsai.app.">
+<meta name="twitter:image" content="https://www.texttoolsai.app/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#EFF0EA;
+  --panel:#E4E6DC;
+  --ink:#1B211E;
+  --ink-2:#5C655E;
+  --rule:#B23A2B;
+  --mark:#E9D66B;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.6;
+  font-weight:400;
+}
+a{color:var(--ink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--rule)}
+a:focus-visible{outline:2px solid var(--rule);outline-offset:3px;border-radius:2px}
+
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:16px;top:16px;background:var(--ink);color:var(--paper);padding:10px 14px;z-index:10;text-decoration:none}
+
+.wrap{max-width:900px;margin:0 auto;padding:0 22px;position:relative}
+@media(min-width:880px){
+  .wrap{padding-left:132px;padding-right:32px}
+}
+
+/* the margin rule — a ruled page, not decoration */
+main{position:relative}
+@media(min-width:880px){
+  main::before{
+    content:"";position:absolute;top:0;bottom:0;
+    left:calc(50% - 450px + 100px);
+    width:1px;background:var(--rule);opacity:.45;
+  }
+}
+
+header{border-bottom:1px solid rgba(27,33,30,.14)}
+.bar{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:20px 0}
+.wordmark{font-weight:600;letter-spacing:-.01em;text-decoration:none;font-size:1.05rem}
+.bar .note{font-size:.8rem;color:var(--ink-2);margin-left:auto}
+
+h1{
+  font-size:clamp(2.05rem,5.2vw,3.3rem);
+  line-height:1.06;
+  letter-spacing:-.028em;
+  font-weight:600;
+  margin:56px 0 24px;
+  max-width:17ch;
+}
+h2{
+  font-size:1.32rem;
+  font-weight:600;
+  letter-spacing:-.015em;
+  margin:0 0 18px;
+}
+h3{font-size:1rem;font-weight:600;margin:0 0 4px;letter-spacing:-.005em}
+p{max-width:66ch;margin:0 0 18px}
+.lede{font-size:1.1rem;color:var(--ink-2);max-width:60ch}
+section{padding:52px 0;border-top:1px solid rgba(27,33,30,.14)}
+section:first-of-type{border-top:none;padding-top:0}
+
+/* hero: a marked-up manuscript paragraph */
+.markup{
+  font-family:var(--mono);
+  font-size:1.02rem;
+  line-height:2;
+  background:var(--panel);
+  padding:26px 24px;
+  max-width:60ch;
+  margin:0 0 30px;
+}
+.markup del{
+  text-decoration:none;
+  color:var(--ink-2);
+  background-image:linear-gradient(var(--rule),var(--rule));
+  background-repeat:no-repeat;
+  background-position:0 .62em;
+  background-size:0 1.5px;
+  animation:strike .45s ease forwards;
+}
+.markup del:nth-of-type(2){animation-delay:.35s}
+.markup del:nth-of-type(3){animation-delay:.7s}
+@keyframes strike{to{background-size:100% 1.5px}}
+.markup ins{
+  text-decoration:none;
+  color:var(--rule);
+  font-weight:500;
+  border-bottom:1px solid rgba(178,58,43,.4);
+}
+.markup mark{background:var(--mark);color:var(--ink);padding:0 2px}
+.caption{font-size:.85rem;color:var(--ink-2);max-width:52ch;margin-top:-16px}
+
+.cta{
+  display:inline-block;
+  background:var(--ink);
+  color:var(--paper);
+  text-decoration:none;
+  padding:13px 24px;
+  font-weight:500;
+  font-size:.98rem;
+}
+.cta:hover{background:var(--rule);color:var(--paper)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:6px}
+.cta-row .alt{font-size:.95rem}
+
+/* tool list — ruled entries, not cards */
+.tools{list-style:none;margin:0;padding:0}
+.tools li{padding:16px 0;border-top:1px solid rgba(27,33,30,.14)}
+.tools li:first-child{border-top:none;padding-top:0}
+.tools p{margin:0;color:var(--ink-2);font-size:.95rem;max-width:62ch}
+.tools a{font-weight:600}
+
+.cols{display:grid;gap:26px;grid-template-columns:1fr}
+@media(min-width:700px){.cols{grid-template-columns:1fr 1fr;gap:26px 44px}}
+.cols p{margin:6px 0 0;font-size:.95rem;color:var(--ink-2)}
+
+details{border-top:1px solid rgba(27,33,30,.14);padding:14px 0}
+details:first-of-type{border-top:none}
+summary{cursor:pointer;font-weight:500;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";color:var(--rule);display:inline-block;width:1.2em;font-weight:600}
+details[open] summary::before{content:"–"}
+details p{margin:10px 0 0 1.2em;color:var(--ink-2);font-size:.95rem}
+
+footer{border-top:1px solid rgba(27,33,30,.14);padding:34px 0 56px;font-size:.9rem;color:var(--ink-2)}
+footer a{color:var(--ink-2)}
+footer ul{list-style:none;padding:0;margin:0 0 18px;display:flex;flex-wrap:wrap;gap:6px 20px}
+
+@media(prefers-reduced-motion:reduce){
+  .markup del{animation:none;background-size:100% 1.5px}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="wordmark" href="https://www.texttoolsai.app/">AI Text Tools</a>
+    <span class="note">A companion guide · built with GitHub Pages</span>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap">
+
+  <section>
+    <h1>AI writing tools that each do one job</h1>
+
+    <p class="markup">
+      <del>In today's fast-paced digital world,</del> <ins>Most</ins> writing
+      <del>can arguably be said to involve</del> <ins>gets stuck on</ins> the same
+      few tasks: <mark>a rough draft, a paragraph that won't land, a page of
+      notes that needs to become three bullets.</mark> <del>Very unique and
+      absolutely essential.</del>
+    </p>
+    <p class="caption">Rewriting, summarizing, fixing tone. Three edits, three tools.</p>
+
+    <p class="lede">
+      <a href="https://www.texttoolsai.app/">AI Text Tools</a> is a free set of
+      single-purpose writing tools for marketers, students, founders and creators.
+      Each one handles a specific task instead of asking you to explain the job to a
+      blank chat window first.
+    </p>
+
+    <div class="cta-row">
+      <a class="cta" href="https://www.texttoolsai.app/tools">Browse the tools</a>
+      <span class="alt"><a href="https://www.texttoolsai.app/blog">or read the writing guides</a></span>
+    </div>
+  </section>
+
+  <section>
+    <h2>What each tool does</h2>
+    <ul class="tools">
+      <li>
+        <h3><a href="https://www.texttoolsai.app/tools/prompt-generator">ChatGPT prompt generator</a></h3>
+        <p>Turns a vague goal into a structured prompt with an audience, output format, constraints and a definition of what a good answer looks like.</p>
+      </li>
+      <li>
+        <h3><a href="https://www.texttoolsai.app/tools/paragraph-rewriter">AI paragraph rewriter</a></h3>
+        <p>Tightens a weak paragraph for clarity and flow while holding onto the original meaning.</p>
+      </li>
+      <li>
+        <h3><a href="https://www.texttoolsai.app/tools/article-summarizer">AI article summarizer</a></h3>
+        <p>Reduces long pasted text to the key points, which is useful before writing notes, briefs or outlines.</p>
+      </li>
+      <li>
+        <h3><a href="https://www.texttoolsai.app/tools/tone-changer">AI tone changer</a></h3>
+        <p>Reshapes one message for different contexts: a formal document, a friendly reply, a persuasive landing page.</p>
+      </li>
+      <li>
+        <h3><a href="https://www.texttoolsai.app/tools/grammar-fixer">AI grammar fixer</a></h3>
+        <p>Cleans up punctuation, spelling and awkward phrasing before you send or publish.</p>
+      </li>
+      <li>
+        <h3><a href="https://www.texttoolsai.app/tools/cold-email-writer">AI cold email writer</a></h3>
+        <p>Drafts short outreach emails built around an audience, an offer, a proof point and one call to action.</p>
+      </li>
+      <li>
+        <h3><a href="https://www.texttoolsai.app/tools/viral-hook-generator">Viral hook generator</a></h3>
+        <p>Produces opening lines for posts, ads, videos and blog intros when the first sentence is the thing blocking you.</p>
+      </li>
+      <li>
+        <h3><a href="https://www.texttoolsai.app/tools/product-description-generator">AI product description generator</a></h3>
+        <p>Converts product specs and buyer context into benefit-led ecommerce copy for product pages and listings.</p>
+      </li>
+      <li>
+        <h3><a href="https://www.texttoolsai.app/tools/ai-detector">AI text detector</a></h3>
+        <p>Flags passages that read as machine-written, so you know which sections still need a human pass.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Who tends to use them</h2>
+    <div class="cols">
+      <div>
+        <h3>Marketers</h3>
+        <p>Campaign briefs through the prompt generator, angles through the hook writer, landing page copy through the rewriter.</p>
+      </div>
+      <div>
+        <h3>Students</h3>
+        <p>Summaries for study notes and grammar cleanup on drafts, with the final work still written in your own voice.</p>
+      </div>
+      <div>
+        <h3>Founders</h3>
+        <p>Website copy, investor updates, launch messages and early sales outreach, drafted faster than from scratch.</p>
+      </div>
+      <div>
+        <h3>Creators</h3>
+        <p>Rough ideas turned into posts, scripts, captions, newsletters and profile copy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Getting output worth keeping</h2>
+    <p>
+      Good AI output starts with a specific brief and ends with a human read.
+      Give the tool a real audience, a goal, a format, a tone and the facts that
+      must survive the rewrite. Then check the draft for accuracy and originality
+      before it goes anywhere.
+    </p>
+    <p>
+      Two guides worth reading first:
+      <a href="https://www.texttoolsai.app/blog/how-to-write-better-prompts">how to write better prompts</a>
+      and
+      <a href="https://www.texttoolsai.app/blog/how-to-rewrite-text-without-losing-meaning">how to rewrite text without losing meaning</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Common questions</h2>
+
+    <details>
+      <summary>Are the tools free?</summary>
+      <p>Yes, with daily usage limits so the site stays fast for everyone.</p>
+    </details>
+    <details>
+      <summary>How accurate is the output?</summary>
+      <p>Useful for drafting, rewriting, summarizing and brainstorming. AI can still miss context or invent details, so verify names, numbers, claims and sources before you rely on anything.</p>
+    </details>
+    <details>
+      <summary>Can I use the results commercially?</summary>
+      <p>Yes, for business, client and marketing work. You stay responsible for checking accuracy, originality and brand fit.</p>
+    </details>
+    <details>
+      <summary>Which tools suit SEO writing?</summary>
+      <p>Start with the prompt generator for intent and outlines, use the paragraph rewriter on weak sections, the summarizer for source notes, and the grammar fixer for the final pass.</p>
+    </details>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <ul>
+      <li><a href="https://www.texttoolsai.app/">Home</a></li>
+      <li><a href="https://www.texttoolsai.app/tools">Tools</a></li>
+      <li><a href="https://www.texttoolsai.app/hubs">Hubs</a></li>
+      <li><a href="https://www.texttoolsai.app/blog">Blog</a></li>
+      <li><a href="https://www.texttoolsai.app/about">About</a></li>
+      <li><a href="https://www.texttoolsai.app/contact">Contact</a></li>
+    </ul>
+    <p>
+      An independent guide page for
+      <a href="https://www.texttoolsai.app/">texttoolsai.app</a>,
+      hosted on GitHub Pages.
+    </p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://USERNAME.github.io/REPO/#webpage",
+      "url": "https://USERNAME.github.io/REPO/",
+      "name": "AI Text Tools: Free Tools for Rewriting, Summarizing & Prompts",
+      "description": "A guide to the free AI text tools at texttoolsai.app.",
+      "inLanguage": "en",
+      "about": { "@id": "https://www.texttoolsai.app/#organization" },
+      "primaryImageOfPage": "https://www.texttoolsai.app/og-image.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.texttoolsai.app/#organization",
+      "name": "AI Text Tools",
+      "url": "https://www.texttoolsai.app/",
+      "logo": "https://www.texttoolsai.app/icon.png",
+      "description": "Free AI-powered tools for prompts, rewriting, summaries, grammar, tone changes, emails, hooks and ecommerce copy.",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61589150166622",
+        "https://www.linkedin.com/company/texttoolsai/"
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "AI Text Tools",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "ChatGPT Prompt Generator", "url": "https://www.texttoolsai.app/tools/prompt-generator" },
+        { "@type": "ListItem", "position": 2, "name": "AI Paragraph Rewriter", "url": "https://www.texttoolsai.app/tools/paragraph-rewriter" },
+        { "@type": "ListItem", "position": 3, "name": "AI Article Summarizer", "url": "https://www.texttoolsai.app/tools/article-summarizer" },
+        { "@type": "ListItem", "position": 4, "name": "AI Tone Changer", "url": "https://www.texttoolsai.app/tools/tone-changer" },
+        { "@type": "ListItem", "position": 5, "name": "AI Grammar Fixer", "url": "https://www.texttoolsai.app/tools/grammar-fixer" },
+        { "@type": "ListItem", "position": 6, "name": "AI Cold Email Writer", "url": "https://www.texttoolsai.app/tools/cold-email-writer" },
+        { "@type": "ListItem", "position": 7, "name": "Viral Hook Generator", "url": "https://www.texttoolsai.app/tools/viral-hook-generator" },
+        { "@type": "ListItem", "position": 8, "name": "AI Product Description Generator", "url": "https://www.texttoolsai.app/tools/product-description-generator" },
+        { "@type": "ListItem", "position": 9, "name": "AI Text Detector", "url": "https://www.texttoolsai.app/tools/ai-detector" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are the tools free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, with daily usage limits so the site stays fast for everyone." }
+        },
+        {
+          "@type": "Question",
+          "name": "How accurate is the output?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Useful for drafting, rewriting, summarizing and brainstorming. AI can still miss context or invent details, so verify names, numbers, claims and sources before you rely on anything." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use the results commercially?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, for business, client and marketing work. You stay responsible for checking accuracy, originality and brand fit." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which tools suit SEO writing?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Start with the prompt generator for intent and outlines, use the paragraph rewriter on weak sections, the summarizer for source notes, and the grammar fixer for the final pass." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
